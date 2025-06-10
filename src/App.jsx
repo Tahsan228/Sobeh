@@ -1,6 +1,7 @@
 import './App.css'
 import Number from './components/Number'
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
   const [inputText, setInputText] = useState('');
