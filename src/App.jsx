@@ -10,22 +10,22 @@ export default function App() {
           <input type="text" id="display" disabled/>
         </div>
         <div className="input">
-          <Number name="1"/>
-          <Number name="2"/>
-          <Number name="3"/>
-          <Number name="AC"/>
-          <Number name="4"/>
-          <Number name="5"/>
-          <Number name="6"/>
-          <Number name="+"/>
-          <Number name="7"/>
-          <Number name="8"/>
-          <Number name="9"/>
-          <Number name="-"/>
-          <Number name="0"/>
-          <Number name="/"/>
-          <Number name="*"/>
-          <Number name="="/>
+          <Number name="1" onClick={() => {}}/>
+          <Number name="2" onClick={() => {}}/>
+          <Number name="3" onClick={() => {}}/>
+          <Number name="AC" onClick={() => {}}/>
+          <Number name="4" onClick={() => {}}/>
+          <Number name="5" onClick={() => {}}/>
+          <Number name="6" onClick={() => {}}/>
+          <Number name="+" onClick={() => {}}/>
+          <Number name="7" onClick={() => {}}/>
+          <Number name="8" onClick={() => {}}/>
+          <Number name="9" onClick={() => {}}/>
+          <Number name="-" onClick={() => {}}/>
+          <Number name="0" onClick={() => {}}/>
+          <Number name="/" onClick={() => {}}/>
+          <Number name="*" onClick={() => {}}/>
+          <Number name="=" onClick={() => {}}/>
         </div>
       </div>
     </main>
