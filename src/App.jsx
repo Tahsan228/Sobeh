@@ -12,24 +12,28 @@ export default function App() {
           <input type="text" id="display" value={inputText} disabled/>
         </div>
         <div className="input">
-          <Number name="1" onClick={() => {
-      setInputText(prev => prev + '1');
+          <Number name="1" onClick={() => setInputText(prev => prev + '1')}/>
+          <Number name="2" onClick={() => setInputText(prev => prev + '2')}/>
+          <Number name="3" onClick={() => setInputText(prev => prev + '3')}/>
+          <Number name="AC" onClick={() => setInputText('')}/>
+          <Number name="4" onClick={() => setInputText(prev => prev + '4')}/>
+          <Number name="5" onClick={() => setInputText(prev => prev + '5')}/>
+          <Number name="6" onClick={() => setInputText(prev => prev + '6')}/>
+          <Number name="+" onClick={() => setInputText(prev => prev + '+')}/>
+          <Number name="7" onClick={() => setInputText(prev => prev + '7')}/>
+          <Number name="8" onClick={() => setInputText(prev => prev + '8')}/>
+          <Number name="9" onClick={() => setInputText(prev => prev + '9')}/>
+          <Number name="-" onClick={() => setInputText(prev => prev + '-')}/>
+          <Number name="0" onClick={() => setInputText(prev => prev + '0')}/>
+          <Number name="/" onClick={() => setInputText(prev => prev + '/')}/>
+          <Number name="*" onClick={() => setInputText(prev => prev + '*')}/>
+          <Number name="=" onClick={() => {
+            try {
+              setInputText(eval(inputText).toString());
+            } catch (error) {
+              setInputText('Error');
+            }
           }}/>
-          <Number name="2" onClick={() => {}}/>
-          <Number name="3" onClick={() => {}}/>
-          <Number name="AC" onClick={() => {}}/>
-          <Number name="4" onClick={() => {}}/>
-          <Number name="5" onClick={() => {}}/>
-          <Number name="6" onClick={() => {}}/>
-          <Number name="+" onClick={() => {}}/>
-          <Number name="7" onClick={() => {}}/>
-          <Number name="8" onClick={() => {}}/>
-          <Number name="9" onClick={() => {}}/>
-          <Number name="-" onClick={() => {}}/>
-          <Number name="0" onClick={() => {}}/>
-          <Number name="/" onClick={() => {}}/>
-          <Number name="*" onClick={() => {}}/>
-          <Number name="=" onClick={() => {}}/>
         </div>
       </div>
     </main>
