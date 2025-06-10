@@ -1,8 +1,6 @@
 function Number(props) {
   return (
-    <div>
-      <button class="number">{props.name}</button>
-    </div>
+    <button className="number">{props.name}</button>
   );
 }
 
