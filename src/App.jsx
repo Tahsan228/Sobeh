@@ -44,7 +44,7 @@ export default function App() {
   )
 }
 
-export default function Broswer() {
+export function Browser() {
   return (
     <main>
       <h1>Browser</h1>
