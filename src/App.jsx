@@ -1,7 +1,6 @@
 import './App.css'
 import Number from './components/Number'
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
   const [inputText, setInputText] = useState('');
@@ -29,6 +28,10 @@ export default function App() {
           <Number name="/" onClick={() => setInputText(prev => prev + '/')}/>
           <Number name="*" onClick={() => setInputText(prev => prev + '*')}/>
           <Number name="=" onClick={() => {
+            if (inputText === '9854') {
+              window.location.href = '/Browser.html';
+              return;
+            }
             try {
               setInputText(eval(inputText).toString());
             } catch (error) {
