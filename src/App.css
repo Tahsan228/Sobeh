@@ -139,19 +139,18 @@ h1 {
   left: 100%;
 }
 
-/* Special button styles */
-.number:nth-child(10) { /* AC button */
+.number:nth-child(4) { /* AC button */
   background: rgba(255, 99, 99, 0.2);
   border-color: rgba(255, 99, 99, 0.3);
 }
 
-.number:nth-child(10):hover {
+.number:nth-child(4):hover {
   background: rgba(255, 99, 99, 0.3);
   border-color: rgba(255, 99, 99, 0.4);
 }
 
-.number:nth-child(12), /* + */
-.number:nth-child(13), /* - */
+.number:nth-child(8), /* + */
+.number:nth-child(12), /* - */
 .number:nth-child(14), /* * */
 .number:nth-child(15), /* / */
 .number:nth-child(16) { /* = */
@@ -168,7 +167,6 @@ h1 {
   border-color: rgba(99, 102, 241, 0.4);
 }
 
-/* Responsive design */
 @media (max-width: 480px) {
   .calculator-container {
     padding: 1.5rem;
@@ -191,7 +189,6 @@ h1 {
   }
 }
 
-/* Smooth entrance animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
