@@ -43,3 +43,11 @@ export default function App() {
     </main>
   )
 }
+
+export default function Broswer() {
+  return (
+    <main>
+      <h1>Browser</h1>
+    </main>
+  )
+}
