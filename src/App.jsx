@@ -46,8 +46,8 @@ export default function App() {
 
 export function Browser() {
   return (
-    <main>
+    <>
       <h1>Browser</h1>
-    </main>
+    </>
   )
 }
