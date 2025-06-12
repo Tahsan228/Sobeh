@@ -47,7 +47,10 @@ export default function App() {
 export function Browser() {
   return (
     <>
-      <h1>Browser</h1>
+      <nav class="topbar">
+        <input type="text" id="search"></input>
+        <button class="Searchbutton"><img src="https://i.ibb.co/qY15v3Gk/image.png" class="searchimage"/></button>
+      </nav>
     </>
   )
 }

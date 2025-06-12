@@ -2,6 +2,7 @@
   "name": "react-javascript",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://<your-username>.github.io/<your-repo-name>",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite",
@@ -21,6 +22,11 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react-router-dom": "^7.6.2"
+  }
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
